@@ -4,7 +4,6 @@ if (sectionListDOM.length === 0) {
     console.error('Nepavyko rasti "section" elemento');
 } else {
     const sectionDOM = sectionListDOM[0];
-
     const listHTML = `
         <ul>
             <li>Design</li>
@@ -15,3 +14,6 @@ if (sectionListDOM.length === 0) {
 
     sectionDOM.innerHTML = listHTML;
 }
+
+const emptySectionDOM = sectionListDOM[1];
+emptySectionDOM.innerHTML = '<div style="color: green; font-size: 30px;">Labas rytas, Lietuva!</div>';
