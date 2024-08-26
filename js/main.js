@@ -1,6 +1,9 @@
-// https://jsdoc.app/
-
 import { capitalize } from "./capitalize.js";
+import { header } from "./header.js";
+
+header('');
+
+// https://jsdoc.app/
 
 // 1. susirandi DOMinanti elementa
 // 2. perskaitai jame esancia informacija
@@ -42,8 +45,6 @@ console.log(document.getElementsByClassName('section-title'));
 
 console.clear();
 
-const sectionTitleDom = document.getElementsByClassName('section-title');
-
 const sectionTitleDOM = document.getElementsByClassName('section-title');
 
 console.log(sectionTitleDOM);
@@ -56,40 +57,10 @@ console.log(text2);
 console.log(text1 === text2);
 console.log(text1.trim() === text2);
 
-// for (let i = 0; i < sectionTitleDom.length; i++) {
-//     console.log(i, sectionTitleDom[i]);
+// for (let i = 0; i < sectionTitleDOM.length; i++) {
+//     console.log(i, sectionTitleDOM[i]);
 // }
 
-// for (const titleDOM of sectionTitleDom) {
-//     console.log(titleDOM);
-// }
-
-// const lowerTexts = [];
-
-// for (const titleDom of sectionTitleDom) {
-//     console.log(textDOM.textContent.toLowerCase());
-//     titleDom.textContent = 'Labas rytas, Lietuva!';
-// }
-
-// console.log(lowerTexts);
-
-// /**
-//  * Dvieju skaiciu suma.
-//  * @param {number} a Pirmasis demuo.
-//  * @param {number} b Antrasis demuo
-//  * @returns {number} Suma.
-//  */
-
-
-// function sum (a, b) {
-//     return a + b;
-// }
-
-// sum(7, 5)
-
-
-const lowerTexts = [];
-
-for (const titleDom of sectionTitleDom) {
-    titleDom.textContent = capitalize(titleDom.textContent);
+for (const titleDOM of sectionTitleDOM) {
+    titleDOM.textContent = capitalize(titleDOM.textContent);
 }
