@@ -21,9 +21,13 @@ export function header(currentHref) {
             text: 'Krepšinis',
         },
         {
+            href: 'scoreboard',
+            text: 'Švieslentė',
+        },
+        {
             href: 'snake',
             text: 'Gyvatėlė',
-        },
+        }, 
     ];
 
     let navHTML = '';
@@ -42,7 +46,7 @@ export function header(currentHref) {
 
     const headerHTML = `
         <header class="header">
-            <img class="logo" src="../logo.png" alt="logo">
+            <img class="logo" src="../logo.svg" alt="logo">
             <nav class="nav">${navHTML}</nav>
         </header>`;
 

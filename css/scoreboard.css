@@ -1,0 +1,102 @@
+body {
+    background-color: slategray;
+}
+
+.scoreboard {
+    background-color: black;
+    width: 550px; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: #39FF14;
+    border: 2px solid #39FF14;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: calc(110vh - 90px); 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 30px;
+    margin: 15px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    margin: 10px 0;
+}
+
+.team p {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #39FF14;
+    border-radius: 5px;
+    background-color: #0dd6f5;
+    color: #39FF14;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for color change */
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #39FF14;
+    color:  #0dd6f5;
+}
+
+.period {
+    margin-top: 30px;
+}
+
+.period h2 {
+    margin: 20px 0;
+}
+
+.period button {
+    background-color: #0dd6f5;
+    color: #39FF14;
+}
+
+.period button:hover {
+    background-color: #39FF14;
+    color: #0dd6f5;
+}
+
+.score-table {
+    margin-top: 30px;
+    color: #39FF14;
+}
+
+.score-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.score-table th, .score-table td {
+    padding: 10px;
+    border: 1px solid #39FF14;
+}
+
+.score-table th {
+    background-color: #0dd6f5;
+}
+
+.score-table tbody tr:nth-child(even) {
+    background-color: #333333;
+}
